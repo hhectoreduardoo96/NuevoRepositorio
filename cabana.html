@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<title>RETO 2 - CABANA</title>
+	
+    <link href="css/estilos.css" rel="stylesheet">
+	
+	<script  src="js/peticiones_ajax_Cabana.js"></script>
+	
+	<!-- <script  src="js/jquery-3.6.1.js"></script> -->
+		
+	<script src="https://code.jquery.com/jquery-3.6.1.js" 
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+		crossorigin="anonymous">
+	</script>
+
+</head>
+
+
+<body>
+	<center>
+	
+	<h1>GESTION DE TABLA CABANA</h1>
+	<hr style="width: 500px;"> <!--separador de temas con linea -->
+	<br>
+	<fieldset style="width: 600px;">
+	<legend>Informacion tabla Cabana:</legend>
+	
+	<table border="0">
+	
+	<tr>
+		<th><span style="color:blue;"><b>ID:</b></th>
+		<td>			
+			<input type="number" id="codigo" style="width: 55%;" placeholder="Ingresa un ID">
+			<input type="button" id="btnBuscarID" value="Buscar ID" onclick="consultaID('#id')">
+		</td>	
+	</tr>
+	
+	<tr>
+		<th><span style="color: blue; align"><b>BRAND:</b></th>
+		<td>
+			
+			<input type="text" id="brand" style="width: 95%;" placeholder="Ingresa brand">		
+		</td>	
+	
+	</tr>
+	
+	<tr>
+		<th><span style="color: blue;"><b>ROOMS:</b></th>
+		<td>
+			
+			<input type="rooms" id="fecha" style="width: 75%;" placeholder="Ingresa rooms">		
+		</td>	
+	
+	</tr>
+	
+	<tr>
+		<th><span style="color: blue;"><b>CATEGORY_ID:</b></th>
+		<td>
+			
+			<input type="number" id="category_id" style="width: 75%;" placeholder="Ingresa category_id">		
+		</td>	
+	
+	</tr>
+	
+	<tr>
+		<th><span style="color: blue;"><b>NAME:</b></th>
+		<td>
+			
+			<input type="text" id="name" style="width: 95%;" placeholder="Ingresa nombre">		
+		</td>	
+	
+	</tr>
+	
+	
+	
+	<tr>
+		<td colspan="4">&nbsp;</td>
+			<input type="button" id="btnLimpiar" value="Limpiar datos" onclick="limpiar_formulario()">
+			&nbsp;&nbsp;
+			<input type="button" id="btnBuscarALL"  value="Mostrar Todos" onclick="consultar_todo()">
+			&nbsp;&nbsp;
+			<input type="button" id="btnBuscarALL"  value="Agregar Registro" onclick="guardarInformacion()">
+			<!-- otra forma: <button onclick="consultar()">Mostrar Registros </button> -->
+			&nbsp;&nbsp;
+			<input type="button" id="btnBuscarID" value="Actualizar Registro" onclick="editar_Informacion()"> <!-- otra forma es pasando el('#id')-->
+
+			<br><br>
+		
+	</tr>
+	
+</table>
+
+</fieldset>
+
+<hr style="height:2px; border-width:0;background-color:blue">
+<h2>RESULTADO:</h2>
+<hr style="width: 800px;">
+<div id="resultado"></div>
+<br><br>
+<hr style="width: 800px;">
+<a href="index.html" title="Regresar la Menu Principal">Regresar Menu Inicio</a>
+</center>
+
+</body>
+
+
+</html>
+
+
+
+
+
+

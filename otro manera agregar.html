@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar - GASTOS</title>
+    <link href="css/estilos.css" rel="stylesheet">
+	
+	<script  src="js/peticiones_ajax.js"></script>
+
+	<script  src="https://code.jquery.com/jquery-3.6.1.js"
+	integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+	crossorigin="anonymous">
+	</script>	
+	
+</head>
+
+
+<body>
+	<h2>Agregar Datos Gastos</h2>
+	
+	<br>
+	<hr style="width: 200px;margin-inline-start: 0">
+	<a href="index.html" title="Regresar Pagina Principal">Regresar</a>
+	<hr style="width: 200px;margin-inline-start: 0">
+	<br>
+	
+	<fieldset style="width: 30%;">
+	<legend>Complete la informacion:</legend>
+	
+	<table>
+		<tr>
+			<th>Nombre:</th>
+			<td><input type="text" id="nombre"></td>
+		
+		</tr>
+		
+		<tr>
+			<th>Valor $:</th>
+			<td><input type="number" id="valor"></td>
+		
+		</tr>
+	
+		<tr>
+			<th>Fecha:</th>
+			<td><input type="date" id="fecha"></td>
+		
+		</tr>
+		
+		<tr>
+			<th>Descripcion $:</th>
+			<td><input type="text" id="desc"></td>
+		
+		</tr>
+	
+		<tr>
+			<th>Usuario:</th>
+			<td><input type="text" id="user"></td>
+		
+		</tr>
+		
+		<tr>
+			<td colspan="2">
+			<input type="button" value="Guardar" onclick="guardar()">
+		
+		</tr>
+		
+		
+		
+	</table>
+</fieldset>
+
+</body>
+</html>
